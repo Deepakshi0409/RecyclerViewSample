@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
+    et = findViewById(R.id. item_edit_text);
+    btn = findViewById(R.id.add_new_list);
+    rcv = findViewById(R.id.rv_items);
     }
 }
