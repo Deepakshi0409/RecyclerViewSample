@@ -10,9 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText et;
-    private Button btn;
-    private RecyclerView mNumbersList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView mNumbersList = findViewById(R.id.rv_items);
         mNumbersList.setLayoutManager(new LinearLayoutManager(this));
+        String[] list = {"Send an E-mail", "Book a cab", "Collect clothes", "Prepare a presentation", "Attend office party", "Pay bills",};
+        mNumbersList.setAdapter(new itemsAdapter(list));
     }
 }
