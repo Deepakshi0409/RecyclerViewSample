@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView mNumbersList = findViewById(R.id.rv_items);
         mNumbersList.setLayoutManager(new LinearLayoutManager(this));
         String[] list = {"Send an E-mail", "Book a cab", "Collect clothes", "Prepare a presentation", "Attend office party", "Pay bills",};
-        mNumbersList.setAdapter(new itemsAdapter(list));
+        mNumbersList.setAdapter(new itemsAdapter());
     }
 }
