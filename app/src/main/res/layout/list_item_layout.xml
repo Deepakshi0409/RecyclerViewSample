@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/text"
-        android:textSize="26sp"
-        android:text="Send an E-mail"/>
+        android:textSize="26sp"/>
 
 </LinearLayout>
