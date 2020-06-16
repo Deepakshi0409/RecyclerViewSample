@@ -1,4 +1,13 @@
 package com.example.to_do;
 
-public class MyListAdapter {
-}
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.NumberViewHolder> {
+
+    }
+
+

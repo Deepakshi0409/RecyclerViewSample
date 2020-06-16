@@ -10,15 +10,17 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    private RecyclerView toDoList;
+    private MyListAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView mNumbersList = findViewById(R.id.rv_items);
-        mNumbersList.setLayoutManager(new LinearLayoutManager(this));
-        String[] list = {"Send an E-mail", "Book a cab", "Collect clothes", "Prepare a presentation", "Attend office party", "Pay bills",};
-        mNumbersList.setAdapter(new itemsAdapter());
+        RecyclerView toDoList = findViewById(R.id.rv_items);
+        toDoList.setLayoutManager(new LinearLayoutManager(this));
+        toDoList.setHasFixedSize(true);
+        
     }
 }
