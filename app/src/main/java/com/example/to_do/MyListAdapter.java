@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.NumberViewHolder> {
+    private String mItemsList;
+    public MyListAdapter(String numberOfItems) {
+        mItemsList = numberOfItems;
+    }
 
     }
 

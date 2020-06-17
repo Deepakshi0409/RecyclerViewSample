@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView toDoList = findViewById(R.id.rv_items);
         toDoList.setLayoutManager(new LinearLayoutManager(this));
         toDoList.setHasFixedSize(true);
-        
+
     }
 }
