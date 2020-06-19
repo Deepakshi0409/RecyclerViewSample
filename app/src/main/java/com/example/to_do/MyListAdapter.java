@@ -12,5 +12,9 @@ import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>{
+    private MyListData[] listdata;
 
+    public MyListAdapter(MyListData[] listdata) {
+        this.listdata = listdata;
 
