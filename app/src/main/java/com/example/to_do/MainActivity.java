@@ -10,17 +10,31 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView toDoList;
-    private MyListAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView toDoList = findViewById(R.id.rv_items);
-        toDoList.setLayoutManager(new LinearLayoutManager(this));
-        toDoList.setHasFixedSize(true);
-
+        MyListData[] myListData = new MyListData[] {
+                new MyListData("Email"),
+                new MyListData("Info" ),
+                new MyListData("Delete"),
+                new MyListData("Dialer"),
+                new MyListData("Alert"),
+                new MyListData("Map"),
+                new MyListData("Email"),
+                new MyListData("Info"),
+                new MyListData("Delete"),
+                new MyListData("Dialer"),
+                new MyListData("Alert"),
+                new MyListData("Map"),
+        };
+        RecyclerView recyclerView = findViewById(R.id.rv_items);
+        MyListAdapter adapter = new MyListAdapter(myListData);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
     }
 }
+
