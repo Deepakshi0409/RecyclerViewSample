@@ -30,15 +30,19 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull MyListAdapter.ViewHolder holder, int position) {
-        final MyListData myListData = listdata[position];
+        MyListData myListData = listdata[position];
         holder.textView.setText(listdata[position].getDescription());
+        TextView number = holder.textView;
+
+        number.setText(myListData.getDescription());
+
 
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listdata.length;
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

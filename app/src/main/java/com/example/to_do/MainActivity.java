@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
                 new MyListData("Dialer"),
                 new MyListData("Alert"),
                 new MyListData("Map"),
+                new MyListData("Map"),
+                new MyListData("Map"),
+                new MyListData("Map"),
         };
         RecyclerView recyclerView = findViewById(R.id.rv_items);
         MyListAdapter adapter = new MyListAdapter(myListData);
